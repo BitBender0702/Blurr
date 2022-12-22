@@ -2355,6 +2355,8 @@ window.ADMIN_BAR_VISIBLE || (barba.init({
                                                 }
                 });
             }
+
+            // slickInit();
             
             initFirstSiteTheme(t.next.container)
         },
@@ -2363,7 +2365,7 @@ window.ADMIN_BAR_VISIBLE || (barba.init({
                 alpha: 0,
                 duration: .5,
                 ease: "power4.in"
-            }), DOM.onReady(), windowLoadHandle(), removeCursorClasses()
+            }), DOM.onReady(), windowLoadHandle(), removeCursorClasses(), slickInit();
         }
     }, {
         name: "self",
@@ -3140,6 +3142,7 @@ window.ADMIN_BAR_VISIBLE || (barba.init({
                 });
             }
 
+            slickInit();
             
             initFirstSiteTheme(t.next.container)
         },
@@ -3148,7 +3151,7 @@ window.ADMIN_BAR_VISIBLE || (barba.init({
                 alpha: 0,
                 duration: .5,
                 ease: "power4.in"
-            }), DOM.onReady(), windowLoadHandle(), removeCursorClasses()
+            }), DOM.onReady(), windowLoadHandle(), removeCursorClasses(), slickInit();
         }
     }, {
         name: "case-study",
@@ -3964,18 +3967,6 @@ $('.faq-row .faq-item').on('click', function() {
     }
 });
 
-// if ($(".slider-for").length > 0) {    
-//     $(".slider-for").slick({
-//         vertical: true,
-//         centerMode: true,
-//         slidesToShow: 1,
-//         infinite: true,
-//         slidesToScroll: 1,
-//         autoplay: true,
-//         autoplaySpeed: 3000,
-//     });
-// }
-
 if ($('#home_blob_container').length > 0) {
     new BlobAnimation("home_blob_container", {
         //Blob main settings
@@ -4736,3 +4727,39 @@ if ($('#service_faq_blob_container').length > 0) {
                                     }
     });
 }
+
+function slickInit() {
+    $(".js-cTestimonialSlider").slick({
+        autoplay: !0,
+        autoplaySpeed: 5e3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: !1,
+        asNavFor: ".js-cTestimonialSliderNav",
+        cssEase: "cubic-bezier(.84, 0, .08, .99)",
+        vertical: !0,
+        prevArrow: $(".prev"),
+        nextArrow: $(".next")
+    }), $(".js-cTestimonialSliderNav").slick({
+        autoplay: !0,
+        autoplaySpeed: 5e3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: ".js-cTestimonialSlider",
+        dots: !0,
+        centerMode: !0,
+        fade: !0,
+        focusOnSelect: !0,
+        cssEase: "cubic-bezier(.84, 0, .08, .99)",
+        appendDots: $(".slider-dots-box"),
+        dotsClass: "slider-dots",
+        prevArrow: $(".prev"),
+        nextArrow: $(".next")
+    }), $(".js-cTestimonialSliderNav").on("beforeChange", (function(t, e, n, i) {
+        $(".slider-dots-box button").html("")
+    })).trigger("beforeChange"), $(".js-cTestimonialSliderNav").on("afterChange", (function(t, e, n) {
+        $(".slider-dots-box button").html(""), $(".slider-dots-box .slick-active button").html('<svg class="progress-svg" width="140" height="140">\n                <g transform="translate(0,0)">\n                <circle class="circle-go" cx="43" cy="44" r="42" ></circle>\n        \t\t</g></svg>')
+    })).trigger("afterChange")
+}
+
+slickInit();

@@ -6812,36 +6812,4 @@ links.forEach((function(t) {
 		}).add(leave(e)))
 	}
 	t.addEventListener("mouseenter", r), t.addEventListener("mouseleave", o)
-})), $(".js-cTestimonialSlider").slick({
-	autoplay: !0,
-	autoplaySpeed: 5e3,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: !1,
-	asNavFor: ".js-cTestimonialSliderNav",
-	cssEase: "cubic-bezier(.84, 0, .08, .99)",
-	vertical: !0,
-	prevArrow: $(".prev"),
-	nextArrow: $(".next")
-}), $(".js-cTestimonialSliderNav").slick({
-	autoplay: !0,
-	autoplaySpeed: 5e3,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	asNavFor: ".js-cTestimonialSlider",
-	dots: !0,
-	centerMode: !0,
-	fade: !0,
-	focusOnSelect: !0,
-	cssEase: "cubic-bezier(.84, 0, .08, .99)",
-	appendDots: $(".slider-dots-box"),
-	dotsClass: "slider-dots",
-	prevArrow: $(".prev"),
-	nextArrow: $(".next")
-}), $(".js-cTestimonialSliderNav").on("beforeChange", (function(t, e, n, i) {
-	$(".slider-dots-box button").html("")
-})).trigger("beforeChange"), $(".js-cTestimonialSliderNav").on("afterChange", (function(t, e, n) {
-	$(".slider-dots-box button").html(""), $(".slider-dots-box .slick-active button").html('<svg class="progress-svg" width="140" height="140">\n                <g transform="translate(0,0)">\n                <circle class="circle-go" cx="43" cy="44" r="42" ></circle>\n        \t\t</g></svg>')
-})).trigger("afterChange"), $(document).ready((function() {
-	initWordAnimation()
-}));
+}))
