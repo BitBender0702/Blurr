@@ -2242,6 +2242,119 @@ window.ADMIN_BAR_VISIBLE || (barba.init({
                                                  ]
                 });
             }
+
+            if ($('#service_faq_blob_container').length > 0) {
+                new BlobAnimation("service_faq_blob_container", {
+                    //Blob main settings
+                        BLOB_SIZE: 100,
+                        BLOB_DISTANCE: 1000,
+                        DETALIZATION: 60,
+                        PERSPECTIVE_DISTORTION: 1,
+                        ROTATION_SPEED: 5,
+                        OFFSET_X: 0, //offset in pixels
+                        OFFSET_Y: 0, //offset in pixels
+                        PERCENTAGE_OFFSET_X: 0, //offset in percentages
+                        PERCENTAGE_OFFSET_Y: 0, //offset in percentages
+                    
+                    //Dot settins
+                        DOT_SIZE: 2,
+                        DOT_COLOR: "gray",
+                
+                    //Responsivity settings
+                        AUTO_SCALE: false,
+                        VIEWPORT_WIDTH: 183,
+                        VIEWPORT_HEIGHT: 133,
+                        
+                    //Mouse settings				
+                        MOUSE_DISTANCE_MIN: 20,
+                        MOUSE_DISTANCE_MAX: 400,
+                        MOUSE_SENSITIVITY: 1,
+                        INERTIAL_TIME: 2,
+                    
+                    //Shape settins
+                        //Shape main settings
+                            INITIAL_SHAPE: {
+                                                wave1: {amplitude: 41.758, frequency: 4.78, phase: 3.142},
+                                                wave2: {amplitude: 31.868, frequency: 2.692, phase: 1.45},
+                                                wave3: {amplitude: 37.363, frequency: 2, phase: 1.036}
+                                        },
+                            USE_MORPHING: true,
+                            USE_WAVE_MOTION: true,
+                            USE_WAVE_SWING: true,
+                        
+                        //Morphing settings
+                            MORPHING_AUTOPLAY: true,
+                            MORPHING_DURATION: 2,
+                            MORPHING_DELAY: 2,
+                            MORPHING_TRANSITION_TYPE: "cubic",	
+                            MORPHING_SHAPES: [									  	
+                                                {
+                                                    wave1: {amplitude: 58.242, frequency: 4.231, phase: 4.005},
+                                                    wave2: {amplitude: 37.363, frequency: 4.176, phase: 5.006},
+                                                    wave3: {amplitude: 41.758, frequency: 3.297, phase: 5.178}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 112.088, frequency: 2.857, phase: 2.969},
+                                                    wave2: {amplitude: 40.659, frequency: 3.187, phase: 2.486},
+                                                    wave3: {amplitude: 43.956, frequency: 0.604, phase: 0.449}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 127.473, frequency: 2.857, phase: 4.626},
+                                                    wave2: {amplitude: 40.659, frequency: 4.286, phase: 0.414},
+                                                    wave3: {amplitude: 31.868, frequency: 0.604, phase: 3.59}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 36.264, frequency: 0, phase: 1.795},
+                                                    wave2: {amplitude: 40.659, frequency: 2.033, phase: 1.312},
+                                                    wave3: {amplitude: 165.934, frequency: 0, phase: 3.97}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 43.956, frequency: 2.967, phase: 4.315},
+                                                    wave2: {amplitude: 40.659, frequency: 4.286, phase: 0.414},
+                                                    wave3: {amplitude: 170.33, frequency: 0, phase: 3.245}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 118.681, frequency: 0, phase: 4.074},
+                                                    wave2: {amplitude: 115.385, frequency: 0, phase: 4.039},
+                                                    wave3: {amplitude: 141.758, frequency: 0.989, phase: 0}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 36.264, frequency: 6.319, phase: 4.419},
+                                                    wave2: {amplitude: 32.967, frequency: 3.242, phase: 4.143},
+                                                    wave3: {amplitude: 2.198, frequency: 7.033, phase: 0.138}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 49.451, frequency: 4.725, phase: 4.592},
+                                                    wave2: {amplitude: 32.967, frequency: 3.242, phase: 4.143},
+                                                    wave3: {amplitude: 161.538, frequency: 0.989, phase: 4.661}
+                                                }									
+                                            ],
+                                            
+                        //Wave motion settings
+                            WAVE_1_MOTION_SPEED: 1.3,
+                            WAVE_2_MOTION_SPEED: 0.8,
+                            //WAVE_3_MOTION_SPEED: 0.3,
+                        
+                        //Wave swing settings
+                            /*
+                            WAVE_1_SWING_SETTINGS: {
+                                                        //amplitude: {amplitude: 0, frequency: 0, phase: 0, type: "pulse"},
+                                                        //frequency: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        //phase: {amplitude: 0, frequency: 0, phase: 0, type: "sine"}
+                                                },
+                            */
+                            WAVE_2_SWING_SETTINGS: {
+                                                        amplitude: {amplitude: 20, frequency: 1, phase: 0, type: "sine"}//,
+                                                        //frequency: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        //phase: {amplitude: 0, frequency: 0, phase: 0, type: "sine"}
+                                                },
+                            WAVE_3_SWING_SETTINGS: {
+                                                        //amplitude: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        //frequency: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        phase: {amplitude: 2, frequency: 0.2, phase: 2.1, type: "sine"}
+                                                }
+                });
+            }
             
             initFirstSiteTheme(t.next.container)
         },
@@ -2798,7 +2911,234 @@ window.ADMIN_BAR_VISIBLE || (barba.init({
                                                     }
                                                  ]
                 });
-            }            
+            }           
+            
+            if ($('#contact_faq_blob_container').length > 0) {
+                new BlobAnimation("contact_faq_blob_container", {
+                            
+                    //Blob main settings
+                        BLOB_SIZE: 100,
+                        BLOB_DISTANCE: 1000,
+                        DETALIZATION: 60,
+                        PERSPECTIVE_DISTORTION: 1,
+                        ROTATION_SPEED: 5,
+                        OFFSET_X: 0, //offset in pixels
+                        OFFSET_Y: 0, //offset in pixels
+                        PERCENTAGE_OFFSET_X: 0, //offset in percentages
+                        PERCENTAGE_OFFSET_Y: 0, //offset in percentages
+                    
+                    //Dot settins
+                        DOT_SIZE: 2,
+                        DOT_COLOR: "gray",
+                
+                    //Responsivity settings
+                        AUTO_SCALE: false,
+                        VIEWPORT_WIDTH: 183,
+                        VIEWPORT_HEIGHT: 133,
+                        
+                    //Mouse settings				
+                        MOUSE_DISTANCE_MIN: 20,
+                        MOUSE_DISTANCE_MAX: 400,
+                        MOUSE_SENSITIVITY: 1,
+                        INERTIAL_TIME: 2,
+                    
+                    //Shape settins
+                        //Shape main settings
+                            INITIAL_SHAPE: {
+                                                wave1: {amplitude: 41.758, frequency: 4.78, phase: 3.142},
+                                                wave2: {amplitude: 31.868, frequency: 2.692, phase: 1.45},
+                                                wave3: {amplitude: 37.363, frequency: 2, phase: 1.036}
+                                        },
+                            USE_MORPHING: true,
+                            USE_WAVE_MOTION: true,
+                            USE_WAVE_SWING: true,
+                        
+                        //Morphing settings
+                            MORPHING_AUTOPLAY: true,
+                            MORPHING_DURATION: 2,
+                            MORPHING_DELAY: 2,
+                            MORPHING_TRANSITION_TYPE: "cubic",	
+                            MORPHING_SHAPES: [									  	
+                                                {
+                                                    wave1: {amplitude: 58.242, frequency: 4.231, phase: 4.005},
+                                                    wave2: {amplitude: 37.363, frequency: 4.176, phase: 5.006},
+                                                    wave3: {amplitude: 41.758, frequency: 3.297, phase: 5.178}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 112.088, frequency: 2.857, phase: 2.969},
+                                                    wave2: {amplitude: 40.659, frequency: 3.187, phase: 2.486},
+                                                    wave3: {amplitude: 43.956, frequency: 0.604, phase: 0.449}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 127.473, frequency: 2.857, phase: 4.626},
+                                                    wave2: {amplitude: 40.659, frequency: 4.286, phase: 0.414},
+                                                    wave3: {amplitude: 31.868, frequency: 0.604, phase: 3.59}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 36.264, frequency: 0, phase: 1.795},
+                                                    wave2: {amplitude: 40.659, frequency: 2.033, phase: 1.312},
+                                                    wave3: {amplitude: 165.934, frequency: 0, phase: 3.97}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 43.956, frequency: 2.967, phase: 4.315},
+                                                    wave2: {amplitude: 40.659, frequency: 4.286, phase: 0.414},
+                                                    wave3: {amplitude: 170.33, frequency: 0, phase: 3.245}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 118.681, frequency: 0, phase: 4.074},
+                                                    wave2: {amplitude: 115.385, frequency: 0, phase: 4.039},
+                                                    wave3: {amplitude: 141.758, frequency: 0.989, phase: 0}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 36.264, frequency: 6.319, phase: 4.419},
+                                                    wave2: {amplitude: 32.967, frequency: 3.242, phase: 4.143},
+                                                    wave3: {amplitude: 2.198, frequency: 7.033, phase: 0.138}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 49.451, frequency: 4.725, phase: 4.592},
+                                                    wave2: {amplitude: 32.967, frequency: 3.242, phase: 4.143},
+                                                    wave3: {amplitude: 161.538, frequency: 0.989, phase: 4.661}
+                                                }									
+                                            ],
+                                            
+                        //Wave motion settings
+                            WAVE_1_MOTION_SPEED: 1.3,
+                            WAVE_2_MOTION_SPEED: 0.8,
+                            //WAVE_3_MOTION_SPEED: 0.3,
+                        
+                        //Wave swing settings
+                            /*
+                            WAVE_1_SWING_SETTINGS: {
+                                                        //amplitude: {amplitude: 0, frequency: 0, phase: 0, type: "pulse"},
+                                                        //frequency: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        //phase: {amplitude: 0, frequency: 0, phase: 0, type: "sine"}
+                                                },
+                            */
+                            WAVE_2_SWING_SETTINGS: {
+                                                        amplitude: {amplitude: 20, frequency: 1, phase: 0, type: "sine"}//,
+                                                        //frequency: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        //phase: {amplitude: 0, frequency: 0, phase: 0, type: "sine"}
+                                                },
+                            WAVE_3_SWING_SETTINGS: {
+                                                        //amplitude: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        //frequency: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        phase: {amplitude: 2, frequency: 0.2, phase: 2.1, type: "sine"}
+                                                }
+                });
+            }
+            
+            if ($('#service_faq_blob_container').length > 0) {
+                new BlobAnimation("service_faq_blob_container", {
+                    //Blob main settings
+                        BLOB_SIZE: 100,
+                        BLOB_DISTANCE: 1000,
+                        DETALIZATION: 60,
+                        PERSPECTIVE_DISTORTION: 1,
+                        ROTATION_SPEED: 5,
+                        OFFSET_X: 0, //offset in pixels
+                        OFFSET_Y: 0, //offset in pixels
+                        PERCENTAGE_OFFSET_X: 0, //offset in percentages
+                        PERCENTAGE_OFFSET_Y: 0, //offset in percentages
+                    
+                    //Dot settins
+                        DOT_SIZE: 2,
+                        DOT_COLOR: "gray",
+                
+                    //Responsivity settings
+                        AUTO_SCALE: false,
+                        VIEWPORT_WIDTH: 183,
+                        VIEWPORT_HEIGHT: 133,
+                        
+                    //Mouse settings				
+                        MOUSE_DISTANCE_MIN: 20,
+                        MOUSE_DISTANCE_MAX: 400,
+                        MOUSE_SENSITIVITY: 1,
+                        INERTIAL_TIME: 2,
+                    
+                    //Shape settins
+                        //Shape main settings
+                            INITIAL_SHAPE: {
+                                                wave1: {amplitude: 41.758, frequency: 4.78, phase: 3.142},
+                                                wave2: {amplitude: 31.868, frequency: 2.692, phase: 1.45},
+                                                wave3: {amplitude: 37.363, frequency: 2, phase: 1.036}
+                                        },
+                            USE_MORPHING: true,
+                            USE_WAVE_MOTION: true,
+                            USE_WAVE_SWING: true,
+                        
+                        //Morphing settings
+                            MORPHING_AUTOPLAY: true,
+                            MORPHING_DURATION: 2,
+                            MORPHING_DELAY: 2,
+                            MORPHING_TRANSITION_TYPE: "cubic",	
+                            MORPHING_SHAPES: [									  	
+                                                {
+                                                    wave1: {amplitude: 58.242, frequency: 4.231, phase: 4.005},
+                                                    wave2: {amplitude: 37.363, frequency: 4.176, phase: 5.006},
+                                                    wave3: {amplitude: 41.758, frequency: 3.297, phase: 5.178}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 112.088, frequency: 2.857, phase: 2.969},
+                                                    wave2: {amplitude: 40.659, frequency: 3.187, phase: 2.486},
+                                                    wave3: {amplitude: 43.956, frequency: 0.604, phase: 0.449}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 127.473, frequency: 2.857, phase: 4.626},
+                                                    wave2: {amplitude: 40.659, frequency: 4.286, phase: 0.414},
+                                                    wave3: {amplitude: 31.868, frequency: 0.604, phase: 3.59}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 36.264, frequency: 0, phase: 1.795},
+                                                    wave2: {amplitude: 40.659, frequency: 2.033, phase: 1.312},
+                                                    wave3: {amplitude: 165.934, frequency: 0, phase: 3.97}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 43.956, frequency: 2.967, phase: 4.315},
+                                                    wave2: {amplitude: 40.659, frequency: 4.286, phase: 0.414},
+                                                    wave3: {amplitude: 170.33, frequency: 0, phase: 3.245}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 118.681, frequency: 0, phase: 4.074},
+                                                    wave2: {amplitude: 115.385, frequency: 0, phase: 4.039},
+                                                    wave3: {amplitude: 141.758, frequency: 0.989, phase: 0}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 36.264, frequency: 6.319, phase: 4.419},
+                                                    wave2: {amplitude: 32.967, frequency: 3.242, phase: 4.143},
+                                                    wave3: {amplitude: 2.198, frequency: 7.033, phase: 0.138}
+                                                },
+                                                {
+                                                    wave1: {amplitude: 49.451, frequency: 4.725, phase: 4.592},
+                                                    wave2: {amplitude: 32.967, frequency: 3.242, phase: 4.143},
+                                                    wave3: {amplitude: 161.538, frequency: 0.989, phase: 4.661}
+                                                }									
+                                            ],
+                                            
+                        //Wave motion settings
+                            WAVE_1_MOTION_SPEED: 1.3,
+                            WAVE_2_MOTION_SPEED: 0.8,
+                            //WAVE_3_MOTION_SPEED: 0.3,
+                        
+                        //Wave swing settings
+                            /*
+                            WAVE_1_SWING_SETTINGS: {
+                                                        //amplitude: {amplitude: 0, frequency: 0, phase: 0, type: "pulse"},
+                                                        //frequency: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        //phase: {amplitude: 0, frequency: 0, phase: 0, type: "sine"}
+                                                },
+                            */
+                            WAVE_2_SWING_SETTINGS: {
+                                                        amplitude: {amplitude: 20, frequency: 1, phase: 0, type: "sine"}//,
+                                                        //frequency: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        //phase: {amplitude: 0, frequency: 0, phase: 0, type: "sine"}
+                                                },
+                            WAVE_3_SWING_SETTINGS: {
+                                                        //amplitude: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        //frequency: {amplitude: 0, frequency: 0, phase: 0, type: "sine"},
+                                                        phase: {amplitude: 2, frequency: 0.2, phase: 2.1, type: "sine"}
+                                                }
+                });
+            }
 
             
             initFirstSiteTheme(t.next.container)
