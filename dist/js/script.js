@@ -2397,17 +2397,17 @@ window.ADMIN_BAR_VISIBLE || (barba.init({
                 }
             });
             
-            if ($(".slider-for").length > 0) {    
-                $(".slider-for").slick({
-                    vertical: true,
-                    centerMode: true,
-                    slidesToShow: 1,
-                    infinite: true,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 3000,
-                });
-            }
+            // if ($(".slider-for").length > 0) {    
+            //     $(".slider-for").slick({
+            //         vertical: true,
+            //         centerMode: true,
+            //         slidesToShow: 1,
+            //         infinite: true,
+            //         slidesToScroll: 1,
+            //         autoplay: true,
+            //         autoplaySpeed: 3000,
+            //     });
+            // }
             
             if ($('#home_blob_container').length > 0) {
                 new BlobAnimation("home_blob_container", {
@@ -3964,17 +3964,17 @@ $('.faq-row .faq-item').on('click', function() {
     }
 });
 
-if ($(".slider-for").length > 0) {    
-    $(".slider-for").slick({
-        vertical: true,
-        centerMode: true,
-        slidesToShow: 1,
-        infinite: true,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-    });
-}
+// if ($(".slider-for").length > 0) {    
+//     $(".slider-for").slick({
+//         vertical: true,
+//         centerMode: true,
+//         slidesToShow: 1,
+//         infinite: true,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 3000,
+//     });
+// }
 
 if ($('#home_blob_container').length > 0) {
     new BlobAnimation("home_blob_container", {

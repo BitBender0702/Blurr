@@ -8,12 +8,15 @@
 	<title>Home - Blurr</title>
 
 	<!-- Core Style -->
-	<link rel="stylesheet" type="text/css" href="./dist/plugins/slick/slick.css">
-  	<link rel="stylesheet" type="text/css" href="./dist/plugins/slick/slick-theme.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./dist/plugins/slick/slick.css"> -->
+  	<!-- <link rel="stylesheet" type="text/css" href="./dist/plugins/slick/slick-theme.css"> -->
+	<link rel="stylesheet" href="./dist/css/main.min.css">
+
 	<link rel="stylesheet" href="./dist/css/output.css">
 	
+	
 	<!-- jQuery Plugin -->
-	<script src="./dist/js/jquery-3.4.1.min.js"></script>
+	<!-- <script src="./dist/js/jquery-3.4.1.min.js"></script> -->
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body class="page-template page-template-tpl-flexible-content page-template-tpl-flexible-content-php page page-id-home singular overflow-hidden">
@@ -141,7 +144,7 @@
 					<section id="introduce-section" data-scroll class="block relative theme-switch pb-[calc((100vw_*_176)_/_1440)] top-[calc((100vw_*_152)_/_768)] md:top-[calc((100vw_*_152)_/_1440)] mb-[calc((100vw_*_115)_/_768)] md:mb-[calc((100vw_*_115)_/_1440)]"  data-theme="dark-mode">
 						<div class="container relative">
 							<div class="section-row md:flex md:gap-[calc((100vw_*_110)_/_1440)] items-end">
-								<div class="corner-media-wrap-1 no-hover mb-[0.8rem] md:mb-[0] w-[calc((100vw_*_550)_/_1440)]" data-scroll data-anim-name="leftImageRightTextSectionCornerAnim2" data-scroll-call="leftImageRightTextSectionCornerAnim2" data-delay="0" data-scroll-offset="46%">
+								<div class="corner-media-wrap-1 no-hover mb-[0.8rem] md:mb-[0] md:w-[calc((100vw_*_550)_/_1440)] xl:w-[550px]" data-scroll data-anim-name="leftImageRightTextSectionCornerAnim2" data-scroll-call="leftImageRightTextSectionCornerAnim2" data-delay="0" data-scroll-offset="46%">
 									<div class="pattern absolute md:top-[calc((100vw_*_-152)_/_1440)] top-[calc((100vw_*_-152)_/_768)] md:left-[calc((100vw_*_-168)_/_1440)] left-[calc((100vw_*_-168)_/_768)]" data-method="initLootie">
 										<img src="./dist/img/pattern05.svg" alt="" class="pattern-img">
 									</div>
@@ -421,9 +424,9 @@
 						</div>
 					</section>
 
-					<section id="selected-works-section" class="block relative theme-switch mt-[calc((100vw_*_200)_/_1440)] xl:mt-[200px]" data-scroll data-scroll-repeat data-theme="dark-mode">
+					 <section id="selected-works-section" class="block relative theme-switch mt-[calc((100vw_*_200)_/_1440)] xl:mt-[200px]" data-scroll data-scroll-repeat data-theme="dark-mode">
                         <div class="container">
-                            <div class="card-grid-1 mb-[calc((100vw_*_200)_/_1440)] xl:mb-[200px] grid md:grid-cols-2 gap-[calc((100vw_*_20)_/_1440)]" data-method="cardControll">
+                            <div class="card-grid-1 mb-[calc((100vw_*_200)_/_1440)] xl:mb-[200px] grid md:grid-cols-2 gap-[calc((100vw_*_20)_/_1440)] px-0 md:px-[calc((100vw_*_110)_/_1440)] xl:px-[110px]" data-method="cardControll">
                                 <div class="card-grid-inner w-[calc((100vw_*_50hw] mb-[calc((100vw_*_100)_/_768)] md:mb-[0]">
                                     <a href="#" data-scroll class="card-1 block relative project-custom-cursor">
                                         <div class="media-hover-wrap mb-[calc((100vw_*_30)_/_768)] md:mb-[calc((100vw_*_30)_/_1440)]">
@@ -476,90 +479,73 @@
 						</div>
                     </section>
 
-					<section id="testimonials-section" class="block relative theme-switch mt-[calc((100vw_*_158)_/_1440)] xl:mt-[158px]" data-scroll data-scroll-repeat data-theme="dark-mode">
-						<div class="container">
-							<div class="md:ml-[calc((100vw_*_120)_/_1440)] xl:ml-[120px]">
-								<div class="c-testimonial-top sal-animate" data-sal="header">
-									<h6 class="line-text" data-method="lineText" data-anim-name="leftImageRightTextSectionLineTextAnim10" data-scroll data-scroll-call="leftImageRightTextSectionLineTextAnim10" data-delay="0">
-										<i class="w-[calc((100vw_*_56)_/_768)] md:w-[calc((100vw_*_56)_/_1440)]"></i>
-										<span>Cosa dicono i nostri clienti</span>
-									</h6>
-									<h2 class="intro-title text font-medium text-primary-500 md:leading-[calc((100vw_*_48)_/_1440)] tracking-[calc((100vw_*_1)_/_1440)] mt-0 mt-[calc((100vw_*_24)_/_1440)] text-[calc((100vw_*_32)_/_768)] leading-[calc((100vw_*_42)_/_768)] md:text-[calc((100vw_*_48)_/_1440)]" data-method="fadeRevealBottom" data-scroll data-anim-name="leftImageRightTextSectionFadeTextAnim10-1" data-scroll-call="leftImageRightTextSectionFadeTextAnim10-1" data-delay="100">
-										Testimonials
-									</h2>
-								</div>
-								<div class="c-testimonial-bottom md:w-[65%]">
-									<div class="cTestimonials__carousel">
-										<div class="cTestimonials__slider">
-											<div class="slider-for js-cTestimonialSlider vertical slider">
-												<div class="cTestimonial-words --client-7" style="width: 100%; display: inline-block;">
-													<p class="text cTestimonial-words-content">
-														Lavorare con Blurr è stato un piacere, hanno buon <br />gusto, sanno quello che fanno e ancora ora stiamo <br />collaborando su vari progetti, sicuramente uno <br />studio da tenersi stretto, buon business a tutti.
-													</p>
-													<div class="cTestimonial__client">
-														<h5 class="text cTestimonial__client-role h5 regular">Monica Vettori</h5>
-														<h6 class="text cTestimonial__client-brand">AmbraCaffè</h6>
-														<div class="cTestimonial-avatar --client-1" style="width: 100%; display: inline-block;">
-															<figure class="cTestimonial-avatar__image">
-																<img src="./dist/img/client.png" alt="" class="loaded">
-															</figure>
+					<section id="testimonials-section" class="block c-testimonial relative theme-switch mt-[calc((100vw_*_220)_/_1440)] xl:mt-[221px]" data-scroll data-scroll-repeat data-theme="dark-mode">
+						<div class="c-testimonial-content postionRelative">
+							<div class="container c-testimonial-container px-0 md:px-[calc((100vw_*_110)_/_1440)] xl:px-[110px]">
+								<div class="cTestimonials">
+									<div class="c-testimonial-top sal-animate" data-sal="header">
+										<h6 class="line-text" data-method="lineText" data-anim-name="leftImageRightTextSectionLineTextAnim10" data-scroll data-scroll-call="leftImageRightTextSectionLineTextAnim10" data-delay="0">
+											<i class="w-[calc((100vw_*_56)_/_768)] md:w-[calc((100vw_*_56)_/_1440)]"></i>
+											<span>Cosa dicono i nostri clienti</span>
+										</h6>
+										<h2 class="intro-title text font-medium text-primary-500 md:leading-[calc((100vw_*_48)_/_1440)] tracking-[calc((100vw_*_1)_/_1440)] mt-[calc((100vw_*_25)_/_768)] md:mt-[calc((100vw_*_25)_/_1440)] xl:mt-[25px] mb-[calc((100vw_*_56)_/_768)] md:mb-[calc((100vw_*_56)_/_1440)] xl:mb-[56px] text-[calc((100vw_*_32)_/_768)] leading-[calc((100vw_*_42)_/_768)] md:text-[calc((100vw_*_48)_/_1440)]" data-method="fadeRevealBottom" data-scroll data-anim-name="leftImageRightTextSectionFadeTextAnim10-1" data-scroll-call="leftImageRightTextSectionFadeTextAnim10-1" data-delay="100">
+											Testimonials
+										</h2>
+									</div>
+									<div class="c-testimonial-bottom">
+										<div class="cTestimonials__carousel">
+											<div class="cTestimonials__slider">
+												<div class="slider slider-for js-cTestimonialSlider">
+													<div class="cTestimonial-words --client-1">
+														<p class="text cTestimonial-words-content">
+															Lavorare con Blurr è stato un piacere, hanno buon <br />gusto, sanno quello che fanno e ancora ora stiamo <br />collaborando su vari progetti, sicuramente uno <br />studio da tenersi stretto, buon business a tutti.
+														</p>
+														<div class="cTestimonial__client">
+															<h5 class="text cTestimonial__client-role h5 regular">Monica Vettori</h5>
+															<h6 class="text cTestimonial__client-brand">AmbraCaffè</h6>
+														</div>
+													</div>
+													<div class="cTestimonial-words --client-2">
+														<p class="text cTestimonial-words-content">
+															Lavorare con Blurr è stato un piacere, hanno buon <br />gusto, sanno quello che fanno e ancora ora stiamo <br />collaborando su vari progetti, sicuramente uno <br />studio da tenersi stretto, buon business a tutti.
+														</p>
+														<div class="cTestimonial__client">
+															<h5 class="text cTestimonial__client-role h5 regular">Monica Vettori</h5>
+															<h6 class="text cTestimonial__client-brand">AmbraCaffè</h6>
+														</div>
+													</div>
+													<div class="cTestimonial-words --client-3">
+														<p class="text cTestimonial-words-content">
+															Lavorare con Blurr è stato un piacere, hanno buon <br />gusto, sanno quello che fanno e ancora ora stiamo <br />collaborando su vari progetti, sicuramente uno <br />studio da tenersi stretto, buon business a tutti.
+														</p>
+														<div class="cTestimonial__client">
+															<h5 class="text cTestimonial__client-role h5 regular">Monica Vettori</h5>
+															<h6 class="text cTestimonial__client-brand">AmbraCaffè</h6>
 														</div>
 													</div>
 												</div>
-												<div class="cTestimonial-words --client-7" style="width: 100%; display: inline-block;">
-													<p class="text cTestimonial-words-content">
-														Lavorare con Blurr è stato un piacere, hanno buon <br />gusto, sanno quello che fanno e ancora ora stiamo <br />collaborando su vari progetti, sicuramente uno <br />studio da tenersi stretto, buon business a tutti.
-													</p>
-													<div class="cTestimonial__client">
-														<h5 class="text cTestimonial__client-role h5 regular">Monica Vettori</h5>
-														<h6 class="text cTestimonial__client-brand">AmbraCaffè</h6>
-														<div class="cTestimonial-avatar --client-1" style="width: 100%; display: inline-block;">
-															<figure class="cTestimonial-avatar__image">
-																<img src="./dist/img/client.png" alt="" class="loaded">
-															</figure>
-														</div>
+												<div class="slider slider-nav js-cTestimonialSliderNav">
+													<div class="cTestimonial-avatar --client-1">
+														<figure class="cTestimonial-avatar__image"><img src="./dist/img/client.png" alt=""></figure>
 													</div>
-												</div>
-												<div class="cTestimonial-words --client-7" style="width: 100%; display: inline-block;">
-													<p class="text cTestimonial-words-content">
-														Lavorare con Blurr è stato un piacere, hanno buon <br />gusto, sanno quello che fanno e ancora ora stiamo <br />collaborando su vari progetti, sicuramente uno <br />studio da tenersi stretto, buon business a tutti.
-													</p>
-													<div class="cTestimonial__client">
-														<h5 class="text cTestimonial__client-role h5 regular">Monica Vettori</h5>
-														<h6 class="text cTestimonial__client-brand">AmbraCaffè</h6>
-														<div class="cTestimonial-avatar --client-1" style="width: 100%; display: inline-block;">
-															<figure class="cTestimonial-avatar__image">
-																<img src="./dist/img/client.png" alt="" class="loaded">
-															</figure>
-														</div>
+													<div class="cTestimonial-avatar --client-3">
+														<figure class="cTestimonial-avatar__image"><img src="./dist/img/client.png" alt=""></figure>
 													</div>
+													<div class="cTestimonial-avatar --client-4">
+														<figure class="cTestimonial-avatar__image"><img src="./dist/img/client.png" alt=""></figure>
+													</div>													
 												</div>
-												<div class="cTestimonial-words --client-7" style="width: 100%; display: inline-block;">
-													<p class="text cTestimonial-words-content">
-														Lavorare con Blurr è stato un piacere, hanno buon <br />gusto, sanno quello che fanno e ancora ora stiamo <br />collaborando su vari progetti, sicuramente uno <br />studio da tenersi stretto, buon business a tutti.
-													</p>
-													<div class="cTestimonial__client">
-														<h5 class="text cTestimonial__client-role h5 regular">Monica Vettori</h5>
-														<h6 class="text cTestimonial__client-brand">AmbraCaffè</h6>
-														<div class="cTestimonial-avatar --client-1" style="width: 100%; display: inline-block;">
-															<figure class="cTestimonial-avatar__image">
-																<img src="./dist/img/client.png" alt="" class="loaded">
-															</figure>
-														</div>
+												<div class="slider-dots-box"></div>
+												<div class="slider-control">
+													<div class="prev">
+														<button type="button">
+															<img src="./dist/img/up-arrow.png" alt="">
+														</button>
 													</div>
-												</div>
-												<div class="cTestimonial-words --client-7" style="width: 100%; display: inline-block;">
-													<p class="text cTestimonial-words-content">
-														Lavorare con Blurr è stato un piacere, hanno buon <br />gusto, sanno quello che fanno e ancora ora stiamo <br />collaborando su vari progetti, sicuramente uno <br />studio da tenersi stretto, buon business a tutti.
-													</p>
-													<div class="cTestimonial__client">
-														<h5 class="text cTestimonial__client-role h5 regular">Monica Vettori</h5>
-														<h6 class="text cTestimonial__client-brand">AmbraCaffè</h6>
-														<div class="cTestimonial-avatar --client-1" style="width: 100%; display: inline-block;">
-															<figure class="cTestimonial-avatar__image">
-																<img src="./dist/img/client.png" alt="" class="loaded">
-															</figure>
-														</div>
+													<div class="next">
+														<button type="button">
+															<img src="./dist/img/down-arrow.png" alt="">
+														</button>
 													</div>
 												</div>
 											</div>
@@ -569,8 +555,7 @@
 							</div>
 						</div>
 					</section>
-					
-					<section id="client-section" data-scroll class="block relative theme-switch pt-[calc((100vw_*_80)_/_1440)] pb-[calc((100vw_*_217.66)_/_1440)]" data-theme="dark-mode">
+					<section id="client-section" data-scroll class="block relative theme-switch pt-[calc((100vw_*_240)_/_1440)] xl:pt-[240px] pb-[calc((100vw_*_217.66)_/_1440)] xl:pb-[217px]" data-theme="dark-mode">
 						<div class="full-container relative">
 							<div class="section-inner pb-[calc((100vw_*_40)_/_1440)]">
 									<h2 class="text block relative font-medium text-center inline-block tracking-[calc((100vw_*_-2.4)_/_1440)] leading-[calc((100vw_*_48)_/_768)] md:leading-[calc((100vw_*_48)_/_1440)] text-[calc((100vw_*_48)_/_768)] md:text-[calc((100vw_*_48)_/_1440)]"
@@ -888,9 +873,10 @@
 <script src="./dist/js/barba.umd.js"></script>
 <script src="./dist/js/ua-parser.min.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@1.5.0/dist/lottie-interactivity.min.js"></script>
-<script src="./dist/plugins/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- <script src="./dist/plugins/slick/slick.min.js" type="text/javascript" charset="utf-8"></script> -->
 <script src="./dist/js/jsband-min.js" type="text/javascript"></script>
 <script src="./dist/js/blob.js" type="text/javascript"></script>
+<script src="./dist/js/bundle.js"></script>
 
 <!-- Core JavaScript -->
 <script src="./dist/js/script.js"></script>
